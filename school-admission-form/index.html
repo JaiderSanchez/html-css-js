@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="School admission form for student registration.">
+    <title>School Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>School Admission Form</h1>
+        <p class="description">Complete the form to register a student.</p>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input
+                    type="text"
+                    id="full-name"
+                    name="fullName"
+                    autocomplete="name"
+                    placeholder="Enter student's full name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="Enter email address"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="class">Select Class</label>
+                <select id="class" name="studentClass" required>
+                    <option value="">Choose a class</option>
+                    <option value="7">Class 7</option>
+                    <option value="8">Class 8</option>
+                    <option value="9">Class 9</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="parent-contact">Parent/Guardian Phone</label>
+                <input
+                    type="tel"
+                    id="parent-contact"
+                    name="parentContact"
+                    autocomplete="tel"
+                    placeholder="Enter contact number"
+                    required
+                >
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </main>
+</body>
+</html>
